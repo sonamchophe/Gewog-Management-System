@@ -1,0 +1,106 @@
+#exampleInputEmail {
+  border-radius: 10px;
+}
+
+#exampleInputPassword {
+  border-radius: 10px;
+}
+
+#exampleInputPassword-7 {
+  border-radius: 10px;
+}
+
+#exampleInputPassword-6 {
+  border-radius: 10px;
+}
+
+#exampleInputPassword-7 {
+  margin-bottom: 10px;
+  height: 10px;
+}
+
+#exampleInputPassword-6 {
+  margin-bottom: 10px;
+}
+
+#exampleInputPassword-5 {
+  margin-bottom: 10px;
+}
+
+#exampleInputPassword-3 {
+  margin-bottom: 10px;
+}
+
+#exampleInputPassword-2 {
+  margin-bottom: 10px;
+}
+
+#exampleInputPassword-4 {
+  margin-bottom: 10px;
+}
+
+:root {
+  background-color: #fff;
+}
+
+.bg-gradient-primary {
+  background-color: #fff;
+  /*background: white;*/
+  background: #fff;
+}
+
+.text-dark.mb-4 {
+  margin-top: 30px;
+  margin-left: 1%;
+  color: #B6514F;
+  width: 70%;
+}
+
+img, svg {
+  height: 60px;
+}
+
+.flex-grow-1.bg-register-image {
+  height: 35%;
+  margin-top: 50%;
+}
+
+.text-dark.mb-4 {
+}
+
+.btn.btn-primary.btn-block.text-white.btn-facebook.btn-user {
+}
+
+.form-control {
+  margin-bottom: 18px;
+  margin-top: 0px;
+}
+
+label {
+  color: #000;
+  font-weight: bold;
+}
+
+#phone {
+  width: 40%;
+}
+
+#imagediv {
+  background-image: url('./../img/register.jpg');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.9rem;
+  height: 20rem;
+  margin-top: 20rem;
+}
+
+#marriageimage{
+  background-image: url('./../img/marriage.png');
+  background-size: contain;
+  background-position: center;
+  background-repeat: no-repeat;
+  margin-left: 1.9rem;
+  height: 20rem;
+  margin-top: 10rem;
+}

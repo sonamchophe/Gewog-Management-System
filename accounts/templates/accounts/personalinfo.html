@@ -1,0 +1,159 @@
+<!DOCTYPE html>
+{% load static %}
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta
+      name="viewport"
+      content="width=device-width, initial-scale=1.0, shrink-to-fit=no"
+    />
+    <link href={% static 'css/img/favicon.ico' %} rel="icon">
+    <title>personal-Register</title>
+    <link rel="stylesheet" href={% static 'css/assets/bootstrap/css/bootstrap.min.css' %} />
+    <link
+      rel="stylesheet"
+      href="https://fonts.googleapis.com/css?family=Nunito:200,200i,300,300i,400,400i,600,600i,700,700i,800,800i,900,900i"
+    />
+    <link rel="stylesheet" href={% static 'css/assets/fonts/fontawesome-all.min.css' %} />
+    <link rel="stylesheet" href={% static 'css/assets/css/untitled.css' %} />
+  </head>
+
+  <body class="bg-gradient-primary">
+    <div class="container">
+      <h4
+        class="text-dark mb-4"
+        style="color: rgb(41, 14, 12); width: 600px; font-size: 18px"
+      >
+        &nbsp;&nbsp;<img
+          src={% static 'css/assets/img/circle-user-solid%20(1).svg' %}
+          style="padding-right: 10px"
+        />
+        &nbsp;<strong>PERSONAL INFORMATION</strong>
+      </h4>
+      <div class="card shadow-lg o-hidden border-0 my-5">
+        <div class="card-body p-0">
+          <div class="row">
+            <div class="col-lg-5 d-none d-lg-flex">
+              <div
+                class="flex-grow-1 bg-register-image"
+                id="imagediv"
+              ></div>
+            </div>
+            <div class="col-lg-7">
+              <div class="p-5">
+                <form class="user" method="POST" action="" enctype="multipart/form-data">
+                    {%  csrf_token  %}
+                  <div class="form-group row">
+                    <label>Name</label>
+                    <input class="form-control" type="text" name = "Name"/>
+
+                    <label>DOB</label>
+                    <input class="form-control" type="date" name="DOB"/>
+
+                    <label>CID</label>
+                    <input class="form-control" type="number" name="Cid"/>
+                  </div>
+                  <div style="margin-top: -18px; margin-left: -0.6rem">
+                    <label>Gender</label> <br />
+                    <input type="radio" id="html" name="gender" value="Male" />
+                    <label for="html">Male</label>
+                    <input type="radio" id="css" name="gender" value="Female" style="margin-left: 3rem" />
+                    <label for="css">Female</label>
+                  </div>
+
+
+
+                  <div class="form-group row">
+                    <label>Chiwog</label
+                    ><input class="form-control" type="text" name="Chiwog"/><label
+                      >Village</label>
+                      <input class="form-control" type="text" name="Village"/>
+
+                    <label>House Number</label>
+                    <input class="form-control" type="text" name="HouseholdNumber"/>
+
+                    <label>Thram Number</label>
+                    <input class="form-control" type="text" name="ThramNumber"/>
+
+                    <label>Profile Photo</label>
+                    <input class="form-control" type="file" name="ProfilePhoto"/>
+
+                    <label>Phone Number<input
+                        class="form-control"
+                        type="text"
+                        id="phone"
+                        style="width: 200px; margin-top: 10px"
+                        name="phone"
+                    /></label>
+
+                    <label style="height: 24px; margin-left: 3.6rem"
+                      >Marital Status</label
+                    >
+                    <div
+                      class="form-check"
+                      style="
+                        height: 30px;
+                        margin-top: 2.4rem;
+                        margin-left: -6.5rem;
+                      "
+                    >
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="formCheck-2"
+                        value="yes"
+                        name="marriage"
+                      />
+
+                      <label class="form-check-label" for="formCheck-2"
+                        >Yes</label
+                      >
+                    </div>
+
+                    <div
+                      class="form-check"
+                      style="
+                        height: 24px;
+                        margin-top: 2.5rem;
+                        margin-left: 1rem;
+                      "
+                    >
+                      <input
+                        class="form-check-input"
+                        type="radio"
+                        id="formCheck-1"
+                        value="no"
+                        name="marriage"
+
+                      />
+                      <label class="form-check-label" for="formCheck-1"
+                        >No</label
+                      >
+                    </div>
+                  </div>
+
+                  <hr />
+                  <!-- <a
+                    class="btn btn-primary btn-block text-white Login"
+                    href="marriage.html"
+                    style="margin-top: 20px; background-color: #09463f"
+                    role="button" type="submit"
+                    >Next</a
+                  > -->
+                  <input class="btn btn-primary btn-block text-white Login" style="margin-top: 20px; background-color: #09463f" type="submit" name = "Submit" />
+                  <hr />
+                </form>
+                <div class="text-center"></div>
+                <div class="text-center"></div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src={% static 'css/assets/js/jquery.min.js' %}></script>
+    <script src={% static 'css/assets/bootstrap/js/bootstrap.min.js' %}></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery-easing/1.4.1/jquery.easing.js"></script>
+    <script src={% static 'css/assets/js/theme.js' %}></script>
+  </body>
+</html>
