@@ -90,16 +90,17 @@ class Marriage(models.Model):
 	status = models.BooleanField(default=False)
 	created = models.DateTimeField(auto_now_add=True)
 
-# 	def __str__(self):
-# 		return self.user.Name
+	def __str__(self):
+		return self.user.Name
 
-class childdata(models.Model):
-	ChildName = models.CharField(max_length=100)
-	DOB = models.DateField()
-	ParentsMarriageID = models.OneToOneField(Marriage, on_delete=models.CASCADE)
+class Childdata(models.Model):
+	user = models.ForeignKey(User, on_delete=models.CASCADE)
+	Child = models.CharField(max_length=100)
+	DoB = models.DateField()
+	Marriage = models.ForeignKey(Marriage, on_delete=models.CASCADE)
 
-	# def __str__(self):
-	# 	return self.ChildName
+	def __str__(self):
+		return self.user + self.Marriage
 
 
 

@@ -68,15 +68,15 @@ def index(request):
 def childdata(request):
 	if request.method == 'POST':
 		review_user = request.user
-		Cname = request.POST.get('ChildName')
-		dob = request.POST.get('DOB')
-		Mid = request.POST.get('ParentsMarriageID')
+		childname = request.POST.get('childname')
+		DoB = request.POST.get('DoB')
+		Marriage = request.POST.get('MarriageId')
 
-		em = childdata(
-			ChildName= Cname, 
+		em = Childdata(
+			Child = childname, 
 			user = review_user, 
-			DoB= dob,
-			ParentsMarriageID  = Mid
+			DoB= DoB,
+			Marriage  = Marriage
 		)
 		email1 = EmailMessage(
             "Gewog Management System",

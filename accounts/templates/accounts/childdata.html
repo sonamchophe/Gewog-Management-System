@@ -53,20 +53,22 @@
                     {% csrf_token %}
                   <div class="form-group row">
                     <label>Child Name</label>
-                    <input class="form-control" type="text" />
+                    <input class="form-control" type="text" name="childname" />
 
                     <label>DOB</label>
-                    <input class="form-control" type="date" />
+                    <input class="form-control" type="date" name="Dob"/>
                     <label>Parents Marriage ID</label>
-                    <input class="form-control" type="number" />
+                    <input class="form-control" type="number"  name="MarriageId"/>
                   </div>
-                  <a
+                  <!-- <a
                     class="btn btn-primary btn-block text-white Login"
                     href="marriage.html"
                     style="margin-top: 20px; background-color: #09463f"
                     role="button"
                     >Next To</a
-                  >
+                  > -->
+                  <input type="submit" class="btn btn-primary btn-block text-white Login"
+                  style="margin-top: 20px; background-color: #09463f" value="Submit" />
                   <hr />
                 </form>
                 <div class="text-center"></div>
